@@ -50,4 +50,10 @@ fn main() {
     // An array type
     let months = ["January", "February", "March", "April", "May", "June", "July",
         "August", "September", "October", "November", "December"];
+
+    another_function(23);
+}
+
+fn another_function(x: i32) {
+    println!("The value of x is: {x}");
 }
