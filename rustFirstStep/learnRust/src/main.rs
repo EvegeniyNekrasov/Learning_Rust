@@ -24,4 +24,30 @@ fn main() {
 
     let spaces = "   "; // string
     let spaces = spaces.len(); // number
+
+    // Compound types
+    /*
+        Rust has two primitive compound types: tuples and arrays
+    */
+
+    // Tuple
+    let tup: (i32, f64, u8) = (500, 6.4, 1);
+
+    //destructuring tuple
+    let tup2 = (500, 6.4, 1);
+    let (x, y, z) = tup2;
+
+    // println!("The value of x is: {x}"); // output: The value of x is: 500
+    // println!("The value of y is: {y}"); // output: The value of x is: 6.4
+    // println!("The value of z is: {z}"); // output: The value of x is: 1
+
+    // access tuple index
+    let some_tup: (i32, f64, u8) = (500, 6.4, 1);
+    let five_hundred = some_tup.0;
+    let six_point_four = some_tup.1;
+    let one = some_tup.2;
+
+    // An array type
+    let months = ["January", "February", "March", "April", "May", "June", "July",
+        "August", "September", "October", "November", "December"];
 }
