@@ -1,7 +1,14 @@
 use crate::functions::print_labeled_measurement;
 use crate::functions::y_value;
 use crate::functions::plus_one;
+use crate::control_flow::is_three;
+use crate::control_flow::let_if_in_let_expression;
+use crate::control_flow::values_from_loop;
+use crate::control_flow::labeled_loop;
+use crate::control_flow::loop_with_while;
+use crate::control_flow::loop_with_for;
 mod functions;
+mod control_flow;
 
 
 fn main() {
@@ -57,11 +64,17 @@ fn main() {
     let months = ["January", "February", "March", "April", "May", "June", "July",
         "August", "September", "October", "November", "December"];
 
-    another_function(23);
-    print_labeled_measurement(5, 'h');
-    y_value();
-    let plus_one_var = plus_one(6);
-    println!("The value of plus_one_var is: {plus_one_var}");
+    // another_function(23);
+    // print_labeled_measurement(5, 'h');
+    // y_value();
+    // let plus_one_var = plus_one(6);
+    // println!("The value of plus_one_var is: {plus_one_var}");
+    // is_three(4);
+    // let_if_in_let_expression();
+    // values_from_loop();
+    // labeled_loop();
+    // loop_with_while();
+    // loop_with_for();
 }
 
 fn another_function(x: i32) {
