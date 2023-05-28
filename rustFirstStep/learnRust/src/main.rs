@@ -1,3 +1,9 @@
+use crate::functions::print_labeled_measurement;
+use crate::functions::y_value;
+use crate::functions::plus_one;
+mod functions;
+
+
 fn main() {
     // Variables and Mutability
     let mut x = 5; // to able to assign another value in the future the variable must be mutable
@@ -52,6 +58,10 @@ fn main() {
         "August", "September", "October", "November", "December"];
 
     another_function(23);
+    print_labeled_measurement(5, 'h');
+    y_value();
+    let plus_one_var = plus_one(6);
+    println!("The value of plus_one_var is: {plus_one_var}");
 }
 
 fn another_function(x: i32) {
