@@ -12,11 +12,13 @@ use crate::ownership::ownership_and_function;
 use crate::ownership::ownership_return_and_scope;
 use crate::references_and_borrowing::reference_to_an_object;
 use crate::references_and_borrowing::mutable_references;
+use crate::slice_type::slicing;
 
 mod functions;
 mod control_flow;
 mod ownership;
 mod references_and_borrowing;
+mod slice_type;
 
 
 fn main() {
@@ -36,4 +38,5 @@ fn main() {
     // ownership_return_and_scope();
     // reference_to_an_object();
     // mutable_references();
+    // slicing();
 }
