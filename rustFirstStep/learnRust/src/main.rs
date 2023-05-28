@@ -13,12 +13,15 @@ use crate::ownership::ownership_return_and_scope;
 use crate::references_and_borrowing::reference_to_an_object;
 use crate::references_and_borrowing::mutable_references;
 use crate::slice_type::slicing;
+use crate::structs::struct_user;
+use crate::structs::tuple_struct;
 
 mod functions;
 mod control_flow;
 mod ownership;
 mod references_and_borrowing;
 mod slice_type;
+mod structs;
 
 
 fn main() {
@@ -39,4 +42,6 @@ fn main() {
     // reference_to_an_object();
     // mutable_references();
     // slicing();
+    // struct_user();
+    // tuple_struct();
 }

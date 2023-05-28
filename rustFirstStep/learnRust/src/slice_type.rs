@@ -6,8 +6,8 @@
 pub fn slicing() {
     let mut s = String::from("hello world");
     let word = first_word(&s);
-    s.clear(); // error!
-    println!("the first word is: {}", word);
+    // s.clear(); // error!
+    // println!("the first word is: {}", word);
 }
 
 fn first_word(s: &str) -> &str {
