@@ -38,3 +38,46 @@ pub fn tuple_struct() {
     println!("{}", black.1);
     println!("{}", black.2);
 }
+
+// Using struct
+#[derive(Debug)] // so we can print debugging information
+struct Rectangle {
+    width: u32,
+    height: u32,
+}
+
+pub fn calculate_area_of_rectangle() {
+    let rect1 = Rectangle {
+        width: 30,
+        height: 50,
+    };
+    println!("rect1 is {:#?}", rect1);
+}
+
+fn area(rectangle: &Rectangle) -> u32 {
+    rectangle.width * rectangle.height // immutable borrow of struct Rectangle instance
+}
+
+
+// Method Syntax
+
+#[derive(Debug)]
+struct Rectangle2 {
+    width: u32,
+    height: u32,
+}
+
+impl Rectangle2 {
+    fn area(&self) -> u32 { // borrows the 'self' instance
+        self.width * self.height
+    }
+}
+
+pub fn calculate_area_of_rectangle2() {
+    let rect2 = Rectangle2 {
+        width: 30,
+        height: 50,
+    };
+
+    println!("rect2 id {:?}", rect2);
+}

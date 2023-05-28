@@ -15,6 +15,8 @@ use crate::references_and_borrowing::mutable_references;
 use crate::slice_type::slicing;
 use crate::structs::struct_user;
 use crate::structs::tuple_struct;
+use crate::structs::calculate_area_of_rectangle;
+use crate::structs::calculate_area_of_rectangle2;
 
 mod functions;
 mod control_flow;
@@ -44,4 +46,6 @@ fn main() {
     // slicing();
     // struct_user();
     // tuple_struct();
+    // calculate_area_of_rectangle();
+    // calculate_area_of_rectangle2();
 }
