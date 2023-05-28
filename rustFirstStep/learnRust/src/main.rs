@@ -9,6 +9,7 @@ use crate::control_flow::loop_with_while;
 use crate::control_flow::loop_with_for;
 use crate::ownership::clone_data;
 use crate::ownership::ownership_and_function;
+use crate::ownership::ownership_return_and_scope;
 mod functions;
 mod control_flow;
 mod ownership;
@@ -80,6 +81,7 @@ fn main() {
     // loop_with_for();
     // clone_data();
     // ownership_and_function();
+    // ownership_return_and_scope();
 }
 
 fn another_function(x: i32) {
